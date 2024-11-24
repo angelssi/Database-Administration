@@ -46,7 +46,10 @@ if ($result) {
 </head>
 
 <style>
-
+        body {
+            padding-top: 20px;
+        }
+        
         .btnMode {
             border: 0px;
             background-color: transparent;
@@ -100,22 +103,27 @@ if ($result) {
     </style>
 
 <body id="body" data-bs-theme="light">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between shadow fixed-top mb-5 p-2">
-    <a href="index.php">
-    <img src="images/logo.png" class="logonav ms-3" style="max-width: 30%;" alt="logonav">
-    </a>
-        <div class="container-fluid d-flex justify-content-end align-items-center">
-            <button class="btnMode p-0 m-0" onclick="changeMode()">
-                <img id="light-mode-icon" class="mode-icon" style="max-width: 100%;" src="images/Sun.png" alt="light-mode-icon">
-            </button>
-            <div class="dropdown ms-3">
-                <button class="btn text-white dropdown-toggle "  style="background-color: #5DADEC;" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top" style="flex-wrap: nowrap;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="index.php" class="d-flex align-items-center" style="text-decoration: none; padding: 0;">
+                <img src="images/logo.png" class="logonav ms-3" style="width: 13vh; border: none; outline: none;"
+                    alt="logonav">
+            </a>
+            <div class="buttons d-flex align-items-center">
+                <button class="btnMode p-0 me-3" onclick="changeMode()" style="background: none; border: none;">
+                    <img id="light-mode-icon" class="mode-icon" style="width: 4vh;" src="images/Sun.png"
+                        alt="light-mode-icon">
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="profile.php">View Profile</a></li>
-                    <li><a class="dropdown-item" href="login.php">Logout</a></li>
-                </ul>
+                <div class="dropdown">
+                    <button class="btn text-white dropdown-toggle" style="background-color: #5DADEC;" type="button"
+                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="profile.php">View Profile</a></li>
+                        <li><a class="dropdown-item" href="login.php">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
