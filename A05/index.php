@@ -181,6 +181,7 @@ mysqli_close($conn);
     </style>
 </head>
 <body id="body" data-bs-theme="light">
+<!-- NavBar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top" style="flex-wrap: nowrap;">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a href="index.php" class="d-flex align-items-center" style="text-decoration: none; padding: 0;">
@@ -195,6 +196,7 @@ mysqli_close($conn);
             </div>
         </nav>
 
+        <!-- For posts -->
         <div class="post-container container-fluid mt-5 p-0">
             <?php foreach ($posts as $post): ?>
                 <div class="post">

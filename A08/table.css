@@ -1,0 +1,50 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+
+}
+header {
+    background-color: #800000; 
+    color: #ffcc00; 
+    padding: 1;
+    text-align: center;
+}
+table {
+    width: 100%;
+    background: #ffffff; 
+}
+th, td {
+    border: 1px solid #800000; 
+    padding: 8px 12px;
+    text-align: center;
+}
+th {
+    background-color: #800000; 
+    color: #ffffff;
+}
+tr:nth-child(even) {
+    background-color: #ffcc00; 
+}
+tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+.container {
+    text-align: center;
+}
+
+@font-face {
+    font-family: archivo;
+    src: url(fonts/archivo.regular.ttf);
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        max-height: 300px;
+    }
+}
