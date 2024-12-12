@@ -112,7 +112,6 @@ include("process.php");
                     <a href="index.php" class="btn btn-secondary rounded-end-5">Clear Filters</a>
                 </div>
             </div>
-        </form>
     </div>
 
 
